@@ -1,8 +1,11 @@
 :root {
     --red: hsl(0, 100%, 74%);
     --green: hsl(154, 59%, 51%);
+    --greenshadow: hsla(154, 59%, 51%, 0.2);
     --blue: hsl(248, 32%, 49%);
+    --blueshadow: hsla(248, 32%, 49%, 0.2);
     --darkblue: hsl(249, 10%, 26%);
+    --darkblueshadow: hsla(249, 10%, 26%, 0.2);
     --grayblue: hsl(246, 25%, 77%);
 }
 
@@ -34,7 +37,7 @@ main {
     background-color: var(--blue);
     text-align: center;
     border-radius: 10px;
-    box-shadow: 0px 10px rgba(0,0,0,0.2);
+    box-shadow: 0px 10px var(--blueshadow);
 }
 
 form {
@@ -43,13 +46,14 @@ form {
     padding-block: 20px;
     color: black;
     border-radius: 10px;
+    box-shadow: 0px 10px rgba(0,0,0,0.2);
 }
 
 input {
     display: block;
     width: calc(100% - 60px);
     margin-block: 20px;
-    padding-inline: 30px;
+    padding-inline: 28px;
     padding-block: 20px;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -60,6 +64,20 @@ input {
 input:focus {
     outline: none;
     border: 2px solid var(--darkblue);
+}
+
+button {
+    display: block;
+    background-color: var(--green);
+    color: white;
+    width: 100%;
+    padding-block: 24px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    border: 2px solid var(--green);
+    letter-spacing: 0.2em;
+    box-shadow: 0px 2px var(--greenshadow);
 }
 
 .attribution { 
