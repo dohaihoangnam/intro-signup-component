@@ -1,0 +1,72 @@
+:root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --blue: hsl(248, 32%, 49%);
+    --darkblue: hsl(249, 10%, 26%);
+    --grayblue: hsl(246, 25%, 77%);
+}
+
+body {
+    background-color: var(--red);
+    background-image: url('images/bg-intro-desktop.png');
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 16px;
+    margin: 0;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 75px;
+    margin-inline: 160px;
+    margin-block: 120px;
+}
+
+#offer {
+    margin-block: 24px;
+    padding-inline: 112px;
+    padding-block: 24px;
+    background-color: var(--blue);
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0px 10px rgba(0,0,0,0.2);
+}
+
+form {
+    background-color: white;
+    padding-inline: 40px;
+    padding-block: 20px;
+    color: black;
+    border-radius: 10px;
+}
+
+input {
+    display: block;
+    width: calc(100% - 60px);
+    margin-block: 20px;
+    padding-inline: 30px;
+    padding-block: 20px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--grayblue);
+    border-radius: 5px;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid var(--darkblue);
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
