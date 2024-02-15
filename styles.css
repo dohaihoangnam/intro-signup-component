@@ -86,6 +86,17 @@ button {
     box-shadow: 0px 2px var(--greenshadow);
 }
 
+#disclaimer {
+    margin-top: 20px;
+    font-size: 11px;
+    color: var(--grayblue);
+    text-align: center;
+}
+
+#t-and-c {
+    color: var(--red);
+}
+
 .attribution { 
     font-size: 11px; 
     text-align: center; 
