@@ -85,6 +85,9 @@ input:focus {
     display: none;
     color: var(--red);
     text-align: right;
+    font-size: 11px;
+    width: 100%;
+    margin-block: 5px;
 }
 
 input[type=submit] {
